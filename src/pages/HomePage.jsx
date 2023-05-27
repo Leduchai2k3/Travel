@@ -6,6 +6,8 @@ import Header from "../components/Header";
 import ItemHome from "../components/ItemHome";
 import Dot from "../icon/Dot";
 import Pag from "../icon/Pag";
+import ItemArticles from "../components/ItemArticles";
+import Footer from "../components/Footer";
 
 const StyledDiv = styled.div`
   display: flex;
@@ -26,8 +28,8 @@ const StyledDiv = styled.div`
 `;
 const HomePage = () => {
   return (
-    <div className="w-full h-full bg-[#F9F7F1] min-h-screen pb-10">
-      <Header>
+    <div className="w-full h-full bg-[#F9F7F1] min-h-screen">
+      <Header image={"bgHome.png"}>
         <div className="absolute top-[50%] text-white left-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col gap-2 items-center">
           <h1 className="text-[50px] font-medium">
             Explore Amazing Destinations
@@ -291,55 +293,60 @@ const HomePage = () => {
             Checkout Latest News And Articles From Our Blog
           </span>
           <div className="grid grid-cols-3 gap-[30px] mt-[50px]">
-            <div className="relative bg-white flex flex-col gap-3">
-              <div className="relative">
-                <button className="absolute top-[24px] left-[24px] bg-[#2650D9] px-[20px] py-[6px] text-[14px] text-white rounded-xl">
-                  Quang Binh
-                </button>
-                <img
-                  src="images.png"
-                  alt=""
-                  className="object-cover p-2 rounded-2xl overflow-hidden"
-                />
-              </div>
-              <div className="flex px-5 text-[#717171] gap-[40px] text-[14px]">
-                <div>
-                  <span>Bao Ngoc</span>
-                </div>
-                <div>
-                  <span>May 20, 2021</span>
-                </div>
-              </div>
-              <div className="font-medium text-lg px-5">
-                <span>
-                  Explore the UNESCO World Heritage largest cave of Vietnam
-                </span>
-              </div>
-            </div>
-            <div>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Dignissimos molestias aspernatur fuga sed earum porro? Asperiores
-              sed illo officiis quae! Sequi tempore quam distinctio? Itaque
-              suscipit ullam excepturi consequatur animi?
-            </div>
-            <div>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Dignissimos molestias aspernatur fuga sed earum porro? Asperiores
-              sed illo officiis quae! Sequi tempore quam distinctio? Itaque
-              suscipit ullam excepturi consequatur animi?
-            </div>
-            <div>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Dignissimos molestias aspernatur fuga sed earum porro? Asperiores
-              sed illo officiis quae! Sequi tempore quam distinctio? Itaque
-              suscipit ullam excepturi consequatur animi?
-            </div>
-            <div>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Dignissimos molestias aspernatur fuga sed earum porro? Asperiores
-              sed illo officiis quae! Sequi tempore quam distinctio? Itaque
-              suscipit ullam excepturi consequatur animi?
-            </div>
+            <ItemArticles
+              image={"images.png"}
+              name={"Bao Ngoc"}
+              date={"May 20, 2021"}
+              address={"Quang Binh"}
+              title={
+                "Explore the UNESCO World Heritage largest cave of Vietnam"
+              }
+            ></ItemArticles>
+            <ItemArticles
+              image={"images.png"}
+              name={"Bao Ngoc"}
+              date={"May 20, 2021"}
+              address={"Quang Binh"}
+              title={
+                "Explore the UNESCO World Heritage largest cave of Vietnam"
+              }
+            ></ItemArticles>
+            <ItemArticles
+              image={"images.png"}
+              name={"Bao Ngoc"}
+              date={"May 20, 2021"}
+              address={"Quang Binh"}
+              title={
+                "Explore the UNESCO World Heritage largest cave of Vietnam"
+              }
+            ></ItemArticles>
+            <ItemArticles
+              image={"images.png"}
+              name={"Bao Ngoc"}
+              date={"May 20, 2021"}
+              address={"Quang Binh"}
+              title={
+                "Explore the UNESCO World Heritage largest cave of Vietnam"
+              }
+            ></ItemArticles>
+            <ItemArticles
+              image={"images.png"}
+              name={"Bao Ngoc"}
+              date={"May 20, 2021"}
+              address={"Quang Binh"}
+              title={
+                "Explore the UNESCO World Heritage largest cave of Vietnam"
+              }
+            ></ItemArticles>
+            <ItemArticles
+              image={"images.png"}
+              name={"Bao Ngoc"}
+              date={"May 20, 2021"}
+              address={"Quang Binh"}
+              title={
+                "Explore the UNESCO World Heritage largest cave of Vietnam"
+              }
+            ></ItemArticles>
           </div>
           <div className="mt-3 flex gap-2">
             <button className="w-[200px] h-[55px] bg-[#ED4949] rounded-lg text-white font-semibold">
@@ -347,6 +354,9 @@ const HomePage = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div className="mt-[120px]">
+        <Footer></Footer>
       </div>
     </div>
   );

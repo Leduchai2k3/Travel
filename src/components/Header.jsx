@@ -3,11 +3,12 @@ import Logo from "../icon/Logo";
 import Search from "../icon/Search";
 
 // eslint-disable-next-line react/prop-types
-const Header = ({ children }) => {
+const Header = ({ image, children }) => {
   return (
-    <div className="relative ">
-      <div className="">
-        <img src="bgHome.png" alt="" className="h-[860px] object-cover" />
+    <div className="relative">
+      <div className="relative">
+        <div className="absolute w-full h-full bg-black opacity-50"></div>
+        <img src={image} alt="" className="h-[860px] object-cover" />
       </div>
       <div className="absolute text-white top-0 flex items-center justify-between w-full h-[94px]">
         <div className="flex pt-[23px] pl-[30px] gap-[127px]">
@@ -28,7 +29,7 @@ const Header = ({ children }) => {
           <div className="font-normal text-[15px] flex gap-[40px]">
             <NavLink to={"/"}>Home</NavLink>
             <NavLink to={"/"}>Listings</NavLink>
-            <NavLink to={"/"}>Blog</NavLink>
+            <NavLink to={"/blog"}>Blog</NavLink>
           </div>
           <div className="font-normal text-[15px] flex gap-[40px]">
             <NavLink to={"/"}>Login</NavLink>
