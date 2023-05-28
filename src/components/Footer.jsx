@@ -73,35 +73,37 @@ const Footer = () => {
           <div className="flex flex-col gap-4 text-[15px] font-light">
             <NavLink to={"/"}>Booking</NavLink>
             <NavLink to={"/"}>Aricles</NavLink>
-            <NavLink to={"/"}>Contact Us</NavLink>
+            <NavLink to={"/"} className="whitespace-nowrap">
+              Contact Us
+            </NavLink>
           </div>
         </div>
         <div className="flex flex-col col-span-3 gap-7">
           <span className="text-[18px]">Discovery</span>
           <div className="grid grid-cols-5 gap-4 text-[15px] font-light">
             <div className="flex flex-col col-span-2 gap-4">
-              <span>Ha Noi</span>
-              <span>Ho Chi Minh</span>
+              <span className="whitespace-nowrap">Ha Noi</span>
+              <span className="whitespace-nowrap">Ho Chi Minh</span>
               <span>Hue</span>
-              <span>Da Nang</span>
-              <span>Phu Quoc</span>
-              <span>Nha Trang</span>
+              <span className="whitespace-nowrap">Da Nang</span>
+              <span className="whitespace-nowrap">Phu Quoc</span>
+              <span className="whitespace-nowrap">Nha Trang</span>
             </div>
             <div className="flex flex-col col-span-2 gap-4">
-              <span>Mui Ne</span>
-              <span>Vung Tau</span>
-              <span>Da Lat</span>
-              <span>Tay Nguyen</span>
-              <span>Quang Nam</span>
-              <span>Nghe An</span>
+              <span className="whitespace-nowrap">Mui Ne</span>
+              <span className="whitespace-nowrap">Vung Tau</span>
+              <span className="whitespace-nowrap">Da Lat</span>
+              <span className="whitespace-nowrap">Tay Nguyen</span>
+              <span className="whitespace-nowrap">Quang Nam</span>
+              <span className="whitespace-nowrap">Nghe An</span>
             </div>
             <div className="flex flex-col col-span-1 gap-4">
-              <span>Dak Lak</span>
-              <span>Lam Dong</span>
-              <span>Hoi An</span>
-              <span>Ha Long Bay</span>
-              <span>Tam Coc</span>
-              <span>Sapa</span>
+              <span className="whitespace-nowrap">Dak Lak</span>
+              <span className="whitespace-nowrap">Lam Dong</span>
+              <span className="whitespace-nowrap">Hoi An</span>
+              <span className="whitespace-nowrap">Ha Long Bay</span>
+              <span className="whitespace-nowrap">Tam Coc</span>
+              <span className="whitespace-nowrap">Sapa</span>
             </div>
           </div>
         </div>

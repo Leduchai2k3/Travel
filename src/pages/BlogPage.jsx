@@ -9,11 +9,11 @@ const BlogPage = () => {
     <div className="w-full h-full min-h-screen bg-white">
       <Header image={"ImageBlog.png"}>
         <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col items-center gap-3 text-white">
-          <h3 className="text-[30px] font-medium">Blog</h3>
-          <span>Home / Blog</span>
+          <h3 className="text-[30px] font-medium mb:hidden">Blog</h3>
+          <span className="mb:hidden">Home / Blog</span>
         </div>
       </Header>
-      <div className="pl-[375px] pr-[375px] grid grid-cols-3 gap-[30px] mt-[70px]">
+      <div className="px-[375px] xl:px-[150px] lg:px-[100px] xs:px-[20px] grid grid-cols-3 mb:gap-[10px] mb:grid-cols-2 gap-[30px] mt-[70px] mb:px-[10px]">
         <div className="flex flex-col col-span-1 gap-5">
           <NavLink to={"/blog/cafe-apartment"}>
             <ItemArticles
@@ -84,7 +84,7 @@ const BlogPage = () => {
             ></ItemArticles>
           </NavLink>
         </div>
-        <div className="flex flex-col col-span-1 gap-7">
+        <div className="flex flex-col col-span-1 gap-7 mb:hidden">
           <div className="h-[115px] rounded-lg flex items-center justify-center bg-[#F9F7F1] px-[30px]">
             <input
               type="text"
@@ -150,7 +150,7 @@ const BlogPage = () => {
           </div>
         </div>
       </div>
-      <div className="pl-[375px] pr-[375px] mt-[53px] flex items-center justify-center gap-[30px] pb-[120px]">
+      <div className="px-[375px] lg:px-[100px] xs:px-[20px] mb:px-[10px] mb:gap-[15px] mt-[53px] flex items-center justify-center gap-[30px] pb-[120px]">
         <svg
           width="7"
           height="11"

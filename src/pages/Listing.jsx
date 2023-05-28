@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Footer from "../components/Footer";
 import Head from "../components/Head";
 import ItemHome from "../components/ItemHome";
@@ -13,8 +14,8 @@ const Listing = () => {
           <span className="font-medium text-[30px]">Listings</span>
           <span className=" text-[16px] text-[#717171]">Home / Listings</span>
         </div>
-        <div className="pl-[375px] pr-[375px] grid grid-cols-3 gap-[30px] ">
-          <div className="col-span-1 bg-[#F4F4F4] h-max p-[30px] rounded-md flex flex-col gap-5">
+        <div className="px-[375px] xl:px-[150px] lg:px-[100px] xs:px-[20px] grid grid-cols-3 mb:grid-cols-2 gap-[30px] ">
+          <div className="col-span-1 bg-[#F4F4F4] h-max p-[30px] rounded-md flex flex-col gap-5 mb:hidden">
             <input
               type="text"
               placeholder="To search type"
@@ -59,7 +60,7 @@ const Listing = () => {
               Radius around selected destination
             </span>
             <div>
-              <Box width={300}>
+              <Box width={"100%"}>
                 <Slider
                   defaultValue={20}
                   aria-label="Default"
@@ -194,7 +195,7 @@ const Listing = () => {
           </div>
           <div className="flex flex-col col-span-2 gap-5">
             <div className="flex items-center justify-between">
-              <p className="flex gap-3">
+              <p className="flex gap-3 mb:hidden">
                 <span className="text-[#717171]">Showing</span>
                 <span>1 – 8 of 10 results</span>
               </p>
@@ -224,6 +225,7 @@ const Listing = () => {
                     viewBox="0 0 40 40"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="flex-shrink-0"
                   >
                     <rect
                       x="0.5"
@@ -245,6 +247,7 @@ const Listing = () => {
                     viewBox="0 0 40 40"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="flex-shrink-0"
                   >
                     <rect
                       x="0.5"
@@ -265,70 +268,82 @@ const Listing = () => {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-[30px]">
+            <div className="grid grid-cols-2 mb:grid-cols-1 gap-[30px]">
               <div className="col-span-1">
-                <ItemHome
-                  image="ItemHome.png"
-                  avatar={"Avatar.png"}
-                  address={"Sai Gon, Ho Chi Minh city"}
-                  title={"Cheerful 1-bedroom in a townhouse with parking."}
-                  description={
-                    "This unique place has a style all its own, pets allowed and only 25  mins to the city centre."
-                  }
-                ></ItemHome>
-                <ItemHome
-                  image="ItemHome.png"
-                  avatar={"Avatar.png"}
-                  address={"Sai Gon, Ho Chi Minh city"}
-                  title={"Cheerful 1-bedroom in a townhouse with parking."}
-                  description={
-                    "This unique place has a style all its own, pets allowed and only 25  mins to the city centre."
-                  }
-                ></ItemHome>
-                <ItemHome
-                  image="ItemHome.png"
-                  avatar={"Avatar.png"}
-                  address={"Sai Gon, Ho Chi Minh city"}
-                  title={"Cheerful 1-bedroom in a townhouse with parking."}
-                  description={
-                    "This unique place has a style all its own, pets allowed and only 25  mins to the city centre."
-                  }
-                ></ItemHome>
+                <NavLink to={"/listing/details"}>
+                  <ItemHome
+                    image="ItemHome.png"
+                    avatar={"Avatar.png"}
+                    address={"Sai Gon, Ho Chi Minh city"}
+                    title={"Cheerful 1-bedroom in a townhouse with parking."}
+                    description={
+                      "This unique place has a style all its own, pets allowed and only 25  mins to the city centre."
+                    }
+                  ></ItemHome>
+                </NavLink>
+                <NavLink to={"/listing/details"}>
+                  <ItemHome
+                    image="ItemHome.png"
+                    avatar={"Avatar.png"}
+                    address={"Sai Gon, Ho Chi Minh city"}
+                    title={"Cheerful 1-bedroom in a townhouse with parking."}
+                    description={
+                      "This unique place has a style all its own, pets allowed and only 25  mins to the city centre."
+                    }
+                  ></ItemHome>
+                </NavLink>
+                <NavLink to={"/listing/details"}>
+                  <ItemHome
+                    image="ItemHome.png"
+                    avatar={"Avatar.png"}
+                    address={"Sai Gon, Ho Chi Minh city"}
+                    title={"Cheerful 1-bedroom in a townhouse with parking."}
+                    description={
+                      "This unique place has a style all its own, pets allowed and only 25  mins to the city centre."
+                    }
+                  ></ItemHome>
+                </NavLink>
               </div>
               <div className="col-span-1">
-                <ItemHome
-                  image="ItemHome.png"
-                  avatar={"Avatar.png"}
-                  address={"Sai Gon, Ho Chi Minh city"}
-                  title={"Cheerful 1-bedroom in a townhouse with parking."}
-                  description={
-                    "This unique place has a style all its own, pets allowed and only 25  mins to the city centre."
-                  }
-                ></ItemHome>
-                <ItemHome
-                  image="ItemHome.png"
-                  avatar={"Avatar.png"}
-                  address={"Sai Gon, Ho Chi Minh city"}
-                  title={"Cheerful 1-bedroom in a townhouse with parking."}
-                  description={
-                    "This unique place has a style all its own, pets allowed and only 25  mins to the city centre."
-                  }
-                ></ItemHome>
-                <ItemHome
-                  image="ItemHome.png"
-                  avatar={"Avatar.png"}
-                  address={"Sai Gon, Ho Chi Minh city"}
-                  title={"Cheerful 1-bedroom in a townhouse with parking."}
-                  description={
-                    "This unique place has a style all its own, pets allowed and only 25  mins to the city centre."
-                  }
-                ></ItemHome>
+                <NavLink to={"/listing/details"}>
+                  <ItemHome
+                    image="ItemHome.png"
+                    avatar={"Avatar.png"}
+                    address={"Sai Gon, Ho Chi Minh city"}
+                    title={"Cheerful 1-bedroom in a townhouse with parking."}
+                    description={
+                      "This unique place has a style all its own, pets allowed and only 25  mins to the city centre."
+                    }
+                  ></ItemHome>
+                </NavLink>
+                <NavLink to={"/listing/details"}>
+                  <ItemHome
+                    image="ItemHome.png"
+                    avatar={"Avatar.png"}
+                    address={"Sai Gon, Ho Chi Minh city"}
+                    title={"Cheerful 1-bedroom in a townhouse with parking."}
+                    description={
+                      "This unique place has a style all its own, pets allowed and only 25  mins to the city centre."
+                    }
+                  ></ItemHome>
+                </NavLink>
+                <NavLink to={"/listing/details"}>
+                  <ItemHome
+                    image="ItemHome.png"
+                    avatar={"Avatar.png"}
+                    address={"Sai Gon, Ho Chi Minh city"}
+                    title={"Cheerful 1-bedroom in a townhouse with parking."}
+                    description={
+                      "This unique place has a style all its own, pets allowed and only 25  mins to the city centre."
+                    }
+                  ></ItemHome>
+                </NavLink>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="pl-[375px] pr-[375px] mt-[53px] flex items-center justify-center gap-[30px] pb-[120px]">
+      <div className="px-[375px] lg:px-[100px] xs:px-[20px] mb:px-[10px] mb:gap-[15px] mt-[53px] flex items-center justify-center gap-[30px] pb-[120px]">
         <svg
           width="7"
           height="11"

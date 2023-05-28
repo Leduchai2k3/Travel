@@ -1,17 +1,16 @@
 import { NavLink } from "react-router-dom";
 import Header from "./../components/Header";
-import Dot from "./../icon/Dot";
 import ItemArticles from "../components/ItemArticles";
 import Footer from "../components/Footer";
 const BlogDetails = () => {
   return (
     <div className="h-full min-w-full min-h-screen bg-white">
       <Header image="/imageDetail.png">
-        <div className="absolute bottom-[30px] left-[50%] translate-x-[-50%] text-white flex items-center justify-center flex-col gap-4">
-          <button className="px-[22px] py-[8px] bg-[#234DD4] rounded-full ">
+        <div className="absolute bottom-[30px] left-[50%] mb:hidden translate-x-[-50%] text-white flex items-center justify-center flex-col gap-4">
+          <button className="px-[22px]  py-[8px] xs:hidden bg-[#234DD4] rounded-full ">
             Ho Chi Minh
           </button>
-          <span className="text-[30px] font-medium">
+          <span className="text-[30px] xl:text-[20px] xs:text-[20px] text-center font-medium ">
             Cafe Apartment - Discover the perfect blend of old-world charm
           </span>
           <div className="flex gap-16">
@@ -50,7 +49,7 @@ const BlogDetails = () => {
           </div>
         </div>
       </Header>
-      <div className="px-[500px] mt-[50px] text-[#717171] leading-6 text-[15px] flex flex-col gap-5">
+      <div className="px-[500px] xl:px-[150px] lg:px-[100px] xs:px-[20px] mt-[50px] text-[#717171] leading-6 text-[15px] flex flex-col gap-5">
         <span className="">
           Originally constructed in the 1960s as an apartment building, the
           Nguyen Hue Cafe Apartment has undergone a fascinating transformation
@@ -137,20 +136,20 @@ const BlogDetails = () => {
             </div>
             <span className="#717171">Share Post</span>
           </div>
-          <div className="flex gap-4">
-            <button className="px-[22px] py-[5px] rounded-full border border-[#EAEAEA]">
+          <div className="gap-4">
+            <button className="px-[22px] py-[5px] m-1 rounded-full border border-[#EAEAEA]">
               Travelling
             </button>
-            <button className="px-[22px] py-[5px] rounded-full border border-[#EAEAEA]">
+            <button className="px-[22px] py-[5px] m-1 rounded-full border border-[#EAEAEA]">
               Art
             </button>
-            <button className="px-[22px] py-[5px] rounded-full border border-[#EAEAEA]">
+            <button className="px-[22px] py-[5px] m-1 rounded-full border border-[#EAEAEA]">
               Vacation
             </button>
-            <button className="px-[22px] py-[5px] rounded-full border border-[#EAEAEA]">
+            <button className="px-[22px] py-[5px] m-1 rounded-full border border-[#EAEAEA]">
               Tourism
             </button>
-            <button className="px-[22px] py-[5px] rounded-full border border-[#EAEAEA]">
+            <button className="px-[22px] py-[5px] m-1 rounded-full border border-[#EAEAEA]">
               Culture
             </button>
           </div>
@@ -198,10 +197,12 @@ const BlogDetails = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#F9F7F1] px-[375px] pt-[60px] flex flex-col gap-[55px] pb-[80px]">
-        <div className="flex items-center justify-between">
+      <div className="bg-[#F9F7F1] px-[375px] xl:px-[150px] lg:px-[100px] xs:px-[20px] pt-[60px] flex flex-col gap-[55px] pb-[80px]">
+        <div className="flex items-center justify-between mb:flex-col mb:justify-center mb:gap-3">
           <div className="flex flex-col gap-3">
-            <h4 className="font-medium text-[30px]">Related articles</h4>
+            <h4 className="font-medium text-[30px] mx-auto">
+              Related articles
+            </h4>
             <span className="text-[#717171]">
               Checkout Latest News And Articles From Our Blog
             </span>
@@ -210,7 +211,7 @@ const BlogDetails = () => {
             View All Articles
           </button>
         </div>
-        <div className="grid grid-cols-3 gap-[30px]">
+        <div className="grid grid-cols-3 mb:grid-cols-1 gap-[30px]">
           <NavLink to={"/blog/cafe-apartment"}>
             <ItemArticles
               image={"/images.png"}
