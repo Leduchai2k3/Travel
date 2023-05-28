@@ -2,12 +2,16 @@ import { NavLink } from "react-router-dom";
 import Logo from "../icon/Logo";
 import Search from "../icon/Search";
 import { useState } from "react";
+import { useAuth } from "../context/auth-context";
+import { signOut } from "firebase/auth";
+import { auth } from "../firebase-app/firebase-auth";
 
 const Head = ({ className }) => {
   const [show, setShow] = useState(false);
   function ClickShow() {
     setShow(!show);
   }
+  const { userInfo } = useAuth();
   return (
     <div
       className={`absolute text-white top-0 flex items-center justify-between w-full h-[94px] ${className}`}
@@ -34,10 +38,26 @@ const Head = ({ className }) => {
           <NavLink to={"/listing"}>Listings</NavLink>
           <NavLink to={"/blog"}>Blog</NavLink>
         </div>
-        <div className="font-normal text-[15px] flex gap-[40px] mb:hidden">
-          <NavLink to={"/login"}>Login</NavLink>
-          <NavLink to={"/resgister"}>Resgister</NavLink>
-        </div>
+
+        {userInfo?.email ? (
+          <div className="flex gap-5">
+            <p className="whitespace-nowrap">
+              Xin chào, {userInfo.email.substring(0, 6)}
+            </p>
+            <button
+              className="cursor-pointer whitespace-nowrap"
+              onClick={() => signOut(auth)}
+            >
+              Đăng xuất
+            </button>
+          </div>
+        ) : (
+          <div className="font-normal text-[15px] flex gap-[40px] mb:hidden">
+            <NavLink to={"/login"}>Login</NavLink>
+            <NavLink to={"/register"}>Resgister</NavLink>
+          </div>
+        )}
+
         <div className="relative flex items-center xs:hidden xl:hidden 2xl:hidden lg:hidden mb:block">
           <svg
             width="24"
@@ -58,7 +78,7 @@ const Head = ({ className }) => {
               <NavLink to={"/listing"}>Listings</NavLink>
               <NavLink to={"/blog"}>Blog</NavLink>
               <NavLink to={"/login"}>Login</NavLink>
-              <NavLink to={"/resgister"}>Resgister</NavLink>
+              <NavLink to={"/register"}>Resgister</NavLink>
             </div>
           ) : (
             ""

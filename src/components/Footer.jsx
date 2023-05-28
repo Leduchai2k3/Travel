@@ -3,8 +3,8 @@ import Logo from "../icon/Logo";
 
 const Footer = () => {
   return (
-    <div className="h-[560px] lg:h-[800px] xs:h-[1100px] relative bg-[#1D293E] px-[350px] pt-[100px] lg:px-[80px] xs:px-[10px] text-white">
-      <div className="grid grid-cols-7 gap-[100px] xs:flex xs:flex-col">
+    <div className="h-[560px] lg:h-[800px] xs:h-[850px] xs:pt-[50px] relative bg-[#1D293E] px-[350px] pt-[100px] lg:px-[80px] xs:px-[10px] text-white">
+      <div className="grid grid-cols-7 gap-[100px] xs:gap-16 xs:flex xs:flex-col">
         <div className="flex flex-col col-span-3 gap-7 lg:col-span-5">
           <span className="text-[18px]">Contact Us</span>
           <div className="flex flex-col gap-4">

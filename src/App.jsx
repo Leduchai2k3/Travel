@@ -7,6 +7,7 @@ import BlogDetails from "./pages/BlogDetails";
 import ListingDetails from "./pages/ListingDetails";
 import { Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/blog" element={<BlogPage></BlogPage>}></Route>
         <Route path="/listing" element={<Listing></Listing>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
+        <Route path="/register" element={<Register></Register>}></Route>
 
         <Route
           path="/listing/details"

@@ -39,13 +39,53 @@ const HomePage = () => {
             <span className="text-[18px] font-normal lg:text-[16px] xs:text-[14px] mb:hidden text-center">
               Find great places to stay, eat, shop, or visit from local experts.
             </span>
-            <StyledDiv className="h-[70px] w-[1137px] lg:w-[900px] xs:w-[700px] sm:w-[550px] sm:hidden mb:hidden  bg-white rounded-[100px] items-center">
-              <input
-                type="text"
-                className="w-full h-full pl-6 pr-20 text-black outline-none rounded-[100px]"
-                placeholder="Search for a destination or place"
-              />
-
+            <StyledDiv className="h-[70px] w-[1137px] lg:w-[900px] xs:w-[700px] py-3 sm:w-[550px] sm:hidden mb:hidden  bg-white rounded-[100px] items-center">
+              <div className="flex h-full">
+                <div className="w-full h-full ml-3 ">
+                  <label htmlFor="search" className="ml-6 text-black">
+                    Where
+                  </label>
+                  <input
+                    name="search"
+                    type="text"
+                    className="w-full pl-6 pr-10 text-black outline-none rounded-[100px] mt-[8px]"
+                    placeholder="Where are you going?"
+                  />
+                </div>
+                <div className="w-full h-full ml-4 border-l border-[#717171]">
+                  <label htmlFor="search" className="ml-6 text-black">
+                    Check in
+                  </label>
+                  <input
+                    name="search"
+                    type="text"
+                    className="w-full pl-6 pr-10 text-black outline-none rounded-[100px] mt-[8px]"
+                    placeholder="Add Dates"
+                  />
+                </div>
+                <div className="w-full h-full ml-3 border-l border-[#717171]">
+                  <label htmlFor="search" className="ml-6 text-black">
+                    Check in
+                  </label>
+                  <input
+                    name="search"
+                    type="text"
+                    className="w-full pl-6 pr-10 text-black outline-none rounded-[100px] mt-[8px]"
+                    placeholder="Add Dates"
+                  />
+                </div>
+                <div className="w-full h-full ml-3 border-l border-[#717171]">
+                  <label htmlFor="search" className="ml-6 text-black">
+                    Guest
+                  </label>
+                  <input
+                    name="search"
+                    type="text"
+                    className="w-[90%] pl-6 pr-10 text-black outline-none rounded-[100px] mt-[8px]"
+                    placeholder="Add Guest"
+                  />
+                </div>
+              </div>
               <div className="absolute bottom-0 translate-y-[-20%] right-2">
                 <SearchButton></SearchButton>
               </div>
