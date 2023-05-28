@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ItemArticles from "../components/ItemArticles";
@@ -5,7 +6,7 @@ import TopArticle from "../components/TopArticle";
 
 const BlogPage = () => {
   return (
-    <div className="w-full h-full bg-white min-h-screen">
+    <div className="w-full h-full min-h-screen bg-white">
       <Header image={"ImageBlog.png"}>
         <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col items-center gap-3 text-white">
           <h3 className="text-[30px] font-medium">Blog</h3>
@@ -13,53 +14,77 @@ const BlogPage = () => {
         </div>
       </Header>
       <div className="pl-[375px] pr-[375px] grid grid-cols-3 gap-[30px] mt-[70px]">
-        <div className="col-span-1 gap-5 flex flex-col">
-          <ItemArticles
-            image={"images.png"}
-            name={"Bao Ngoc"}
-            date={"May 20, 2021"}
-            address={"Quang Binh"}
-            title={"Explore the UNESCO World Heritage largest cave of Vietnam"}
-          ></ItemArticles>
-          <ItemArticles
-            image={"images.png"}
-            name={"Bao Ngoc"}
-            date={"May 20, 2021"}
-            address={"Quang Binh"}
-            title={"Explore the UNESCO World Heritage largest cave of Vietnam"}
-          ></ItemArticles>
-          <ItemArticles
-            image={"images.png"}
-            name={"Bao Ngoc"}
-            date={"May 20, 2021"}
-            address={"Quang Binh"}
-            title={"Explore the UNESCO World Heritage largest cave of Vietnam"}
-          ></ItemArticles>
+        <div className="flex flex-col col-span-1 gap-5">
+          <NavLink to={"/blog/cafe-apartment"}>
+            <ItemArticles
+              image={"images.png"}
+              name={"Bao Ngoc"}
+              date={"May 20, 2021"}
+              address={"Quang Binh"}
+              title={
+                "Explore the UNESCO World Heritage largest cave of Vietnam"
+              }
+            ></ItemArticles>
+          </NavLink>
+          <NavLink to={"/blog/cafe-apartment"}>
+            <ItemArticles
+              image={"images.png"}
+              name={"Bao Ngoc"}
+              date={"May 20, 2021"}
+              address={"Quang Binh"}
+              title={
+                "Explore the UNESCO World Heritage largest cave of Vietnam"
+              }
+            ></ItemArticles>
+          </NavLink>
+          <NavLink to={"/blog/cafe-apartment"}>
+            <ItemArticles
+              image={"images.png"}
+              name={"Bao Ngoc"}
+              date={"May 20, 2021"}
+              address={"Quang Binh"}
+              title={
+                "Explore the UNESCO World Heritage largest cave of Vietnam"
+              }
+            ></ItemArticles>
+          </NavLink>
         </div>
-        <div className="col-span-1 gap-5 flex flex-col">
-          <ItemArticles
-            image={"images.png"}
-            name={"Bao Ngoc"}
-            date={"May 20, 2021"}
-            address={"Quang Binh"}
-            title={"Explore the UNESCO World Heritage largest cave of Vietnam"}
-          ></ItemArticles>
-          <ItemArticles
-            image={"images.png"}
-            name={"Bao Ngoc"}
-            date={"May 20, 2021"}
-            address={"Quang Binh"}
-            title={"Explore the UNESCO World Heritage largest cave of Vietnam"}
-          ></ItemArticles>
-          <ItemArticles
-            image={"images.png"}
-            name={"Bao Ngoc"}
-            date={"May 20, 2021"}
-            address={"Quang Binh"}
-            title={"Explore the UNESCO World Heritage largest cave of Vietnam"}
-          ></ItemArticles>
+        <div className="flex flex-col col-span-1 gap-5">
+          <NavLink to={"/blog/cafe-apartment"}>
+            <ItemArticles
+              image={"images.png"}
+              name={"Bao Ngoc"}
+              date={"May 20, 2021"}
+              address={"Quang Binh"}
+              title={
+                "Explore the UNESCO World Heritage largest cave of Vietnam"
+              }
+            ></ItemArticles>
+          </NavLink>
+          <NavLink to={"/blog/cafe-apartment"}>
+            <ItemArticles
+              image={"images.png"}
+              name={"Bao Ngoc"}
+              date={"May 20, 2021"}
+              address={"Quang Binh"}
+              title={
+                "Explore the UNESCO World Heritage largest cave of Vietnam"
+              }
+            ></ItemArticles>
+          </NavLink>
+          <NavLink to={"/blog/cafe-apartment"}>
+            <ItemArticles
+              image={"images.png"}
+              name={"Bao Ngoc"}
+              date={"May 20, 2021"}
+              address={"Quang Binh"}
+              title={
+                "Explore the UNESCO World Heritage largest cave of Vietnam"
+              }
+            ></ItemArticles>
+          </NavLink>
         </div>
-        <div className="col-span-1 flex flex-col gap-7">
+        <div className="flex flex-col col-span-1 gap-7">
           <div className="h-[115px] rounded-lg flex items-center justify-center bg-[#F9F7F1] px-[30px]">
             <input
               type="text"
@@ -72,30 +97,36 @@ const BlogPage = () => {
             <ul className="flex flex-col gap-4 pl-[20px] text-[#717171]">
               <li>Da Nang</li>
               <li>Nha Trang</li>
-              <li className="text-[#ED4949]">Hue</li>
+              <li className="text-[#ED 4949]">Hue</li>
               <li>Ninh Binh</li>
               <li>Ho Chi Minh</li>
               <li>Da Lat</li>
               <li>Hai Phong</li>
             </ul>
           </div>
-          <div className="rounded-lg flex flex-col justify-start bg-[#F9F7F1] px-[30px] py-[30px] gap-4">
+          <div className="rounded-lg flex  flex-col justify-start bg-[#F9F7F1] px-[30px] py-[30px] gap-4">
             <span className="font-medium text-[18px]">Top Article</span>
-            <TopArticle
-              image={"ImageBlog1.png"}
-              title={"Vietnam in Spring, what to do?"}
-              date={"January 7, 2021"}
-            ></TopArticle>
-            <TopArticle
-              image={"ImageBlog1.png"}
-              title={"Vietnam in Spring, what to do?"}
-              date={"January 7, 2021"}
-            ></TopArticle>
-            <TopArticle
-              image={"ImageBlog1.png"}
-              title={"Vietnam in Spring, what to do?"}
-              date={"January 7, 2021"}
-            ></TopArticle>
+            <NavLink to={"/blog/cafe-apartment"}>
+              <TopArticle
+                image={"ImageBlog1.png"}
+                title={"Vietnam in Spring, what to do?"}
+                date={"January 7, 2021"}
+              ></TopArticle>
+            </NavLink>
+            <NavLink to={"/blog/cafe-apartment"}>
+              <TopArticle
+                image={"ImageBlog1.png"}
+                title={"Vietnam in Spring, what to do?"}
+                date={"January 7, 2021"}
+              ></TopArticle>
+            </NavLink>
+            <NavLink to={"/blog/cafe-apartment"}>
+              <TopArticle
+                image={"ImageBlog1.png"}
+                title={"Vietnam in Spring, what to do?"}
+                date={"January 7, 2021"}
+              ></TopArticle>
+            </NavLink>
           </div>
           <div className="rounded-lg flex flex-col justify-start bg-[#F9F7F1] px-[30px] py-[30px] gap-4 ">
             <span className="font-medium text-[18px]">Tags</span>

@@ -8,6 +8,7 @@ import Dot from "../icon/Dot";
 import Pag from "../icon/Pag";
 import ItemArticles from "../components/ItemArticles";
 import Footer from "../components/Footer";
+import { NavLink } from "react-router-dom";
 
 const StyledDiv = styled.div`
   display: flex;
@@ -308,60 +309,72 @@ const HomePage = () => {
             Checkout Latest News And Articles From Our Blog
           </span>
           <div className="grid grid-cols-3 gap-[30px] mt-[50px] sm:flex sm:flex-col">
-            <ItemArticles
-              image={"images.png"}
-              name={"Bao Ngoc"}
-              date={"May 20, 2021"}
-              address={"Quang Binh"}
-              title={
-                "Explore the UNESCO World Heritage largest cave of Vietnam"
-              }
-            ></ItemArticles>
-            <ItemArticles
-              image={"images.png"}
-              name={"Bao Ngoc"}
-              date={"May 20, 2021"}
-              address={"Quang Binh"}
-              title={
-                "Explore the UNESCO World Heritage largest cave of Vietnam"
-              }
-            ></ItemArticles>
-            <ItemArticles
-              image={"images.png"}
-              name={"Bao Ngoc"}
-              date={"May 20, 2021"}
-              address={"Quang Binh"}
-              title={
-                "Explore the UNESCO World Heritage largest cave of Vietnam"
-              }
-            ></ItemArticles>
-            <ItemArticles
-              image={"images.png"}
-              name={"Bao Ngoc"}
-              date={"May 20, 2021"}
-              address={"Quang Binh"}
-              title={
-                "Explore the UNESCO World Heritage largest cave of Vietnam"
-              }
-            ></ItemArticles>
-            <ItemArticles
-              image={"images.png"}
-              name={"Bao Ngoc"}
-              date={"May 20, 2021"}
-              address={"Quang Binh"}
-              title={
-                "Explore the UNESCO World Heritage largest cave of Vietnam"
-              }
-            ></ItemArticles>
-            <ItemArticles
-              image={"images.png"}
-              name={"Bao Ngoc"}
-              date={"May 20, 2021"}
-              address={"Quang Binh"}
-              title={
-                "Explore the UNESCO World Heritage largest cave of Vietnam"
-              }
-            ></ItemArticles>
+            <NavLink to={"/blog/cafe-apartment"}>
+              <ItemArticles
+                image={"images.png"}
+                name={"Bao Ngoc"}
+                date={"May 20, 2021"}
+                address={"Quang Binh"}
+                title={
+                  "Explore the UNESCO World Heritage largest cave of Vietnam"
+                }
+              ></ItemArticles>
+            </NavLink>
+            <NavLink to={"/blog/cafe-apartment"}>
+              <ItemArticles
+                image={"images.png"}
+                name={"Bao Ngoc"}
+                date={"May 20, 2021"}
+                address={"Quang Binh"}
+                title={
+                  "Explore the UNESCO World Heritage largest cave of Vietnam"
+                }
+              ></ItemArticles>
+            </NavLink>
+            <NavLink to={"/blog/cafe-apartment"}>
+              <ItemArticles
+                image={"images.png"}
+                name={"Bao Ngoc"}
+                date={"May 20, 2021"}
+                address={"Quang Binh"}
+                title={
+                  "Explore the UNESCO World Heritage largest cave of Vietnam"
+                }
+              ></ItemArticles>
+            </NavLink>
+            <NavLink to={"/blog/cafe-apartment"}>
+              <ItemArticles
+                image={"images.png"}
+                name={"Bao Ngoc"}
+                date={"May 20, 2021"}
+                address={"Quang Binh"}
+                title={
+                  "Explore the UNESCO World Heritage largest cave of Vietnam"
+                }
+              ></ItemArticles>
+            </NavLink>
+            <NavLink to={"/blog/cafe-apartment"}>
+              <ItemArticles
+                image={"images.png"}
+                name={"Bao Ngoc"}
+                date={"May 20, 2021"}
+                address={"Quang Binh"}
+                title={
+                  "Explore the UNESCO World Heritage largest cave of Vietnam"
+                }
+              ></ItemArticles>
+            </NavLink>
+            <NavLink to={"/blog/cafe-apartment"}>
+              <ItemArticles
+                image={"images.png"}
+                name={"Bao Ngoc"}
+                date={"May 20, 2021"}
+                address={"Quang Binh"}
+                title={
+                  "Explore the UNESCO World Heritage largest cave of Vietnam"
+                }
+              ></ItemArticles>
+            </NavLink>
           </div>
           <div className="flex gap-2 mt-3">
             <button className="w-[200px] h-[55px] bg-[#ED4949] rounded-lg text-white font-semibold">

@@ -6,7 +6,11 @@ const Header = ({ image, children }) => {
     <div className="relative">
       <div className="relative">
         <div className="absolute w-full h-full bg-black opacity-50"></div>
-        <img src={image} alt="" className="object-cover min-w-screen" />
+        <img
+          src={image}
+          alt=""
+          className="object-cover min-w-screen h-[100%]"
+        />
       </div>
       <Head></Head>
       {children}

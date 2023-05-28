@@ -1,30 +1,204 @@
 import Footer from "../components/Footer";
 import Head from "../components/Head";
 import ItemHome from "../components/ItemHome";
+import Box from "@mui/material/Box";
+import Slider from "@mui/material/Slider";
 
 const Listing = () => {
   return (
     <div className="w-full h-full">
       <Head className={"bg-[#ED4949]"}></Head>
       <div className="pt-[174px] flex flex-col items-center gap-[50px]">
-        <div className=" flex flex-col items-center gap-2">
+        <div className="flex flex-col items-center gap-2 ">
           <span className="font-medium text-[30px]">Listings</span>
           <span className=" text-[16px] text-[#717171]">Home / Listings</span>
         </div>
-        <div className="pl-[375px] pr-[375px] grid grid-cols-3 gap-[30px]">
-          <div className="col-span-1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consectetur, dicta. Alias, dolore totam? Numquam eveniet quis,
-            necessitatibus, ratione sed, corporis repudiandae vero dicta quidem
-            ad voluptatum fuga eligendi praesentium impedit.
+        <div className="pl-[375px] pr-[375px] grid grid-cols-3 gap-[30px] ">
+          <div className="col-span-1 bg-[#F4F4F4] h-max p-[30px] rounded-md flex flex-col gap-5">
+            <input
+              type="text"
+              placeholder="To search type"
+              className="px-[22px] py-[15px] w-full rounded-lg outline-none"
+            />
+            <button className="w-full bg-white rounded-lg">
+              <div className="flex items-center justify-between px-[22px] py-[15px] text-[#717171]">
+                <span>All Category</span>
+                <svg
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.84016 0.493663L9.5126 0.163823C9.40951 0.0608136 9.27235 0.00406517 9.12577 0.00406517C8.97926 0.00406517 8.84194 0.0608136 8.73885 0.163823L5.00224 3.9006L1.26131 0.159676C1.15838 0.0566672 1.02107 0 0.87456 0C0.728055 0 0.590655 0.0566672 0.487646 0.159676L0.160001 0.487484C-0.0533338 0.700656 -0.0533338 1.04789 0.160001 1.26107L4.61402 5.7311C4.71695 5.83403 4.8541 5.90655 5.00191 5.90655H5.00362C5.1502 5.90655 5.28736 5.83395 5.39029 5.7311L9.84016 1.27318C9.94325 1.17025 9.99984 1.02895 10 0.882446C10 0.73586 9.94325 0.596509 9.84016 0.493663Z"
+                    fill="#717171"
+                  />
+                </svg>
+              </div>
+            </button>
+
+            <button className="w-full bg-white rounded-lg">
+              <div className="flex items-center justify-between px-[22px] py-[15px] text-[#717171]">
+                <span>Location</span>
+                <svg
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.84016 0.493663L9.5126 0.163823C9.40951 0.0608136 9.27235 0.00406517 9.12577 0.00406517C8.97926 0.00406517 8.84194 0.0608136 8.73885 0.163823L5.00224 3.9006L1.26131 0.159676C1.15838 0.0566672 1.02107 0 0.87456 0C0.728055 0 0.590655 0.0566672 0.487646 0.159676L0.160001 0.487484C-0.0533338 0.700656 -0.0533338 1.04789 0.160001 1.26107L4.61402 5.7311C4.71695 5.83403 4.8541 5.90655 5.00191 5.90655H5.00362C5.1502 5.90655 5.28736 5.83395 5.39029 5.7311L9.84016 1.27318C9.94325 1.17025 9.99984 1.02895 10 0.882446C10 0.73586 9.94325 0.596509 9.84016 0.493663Z"
+                    fill="#717171"
+                  />
+                </svg>
+              </div>
+            </button>
+            <span className="text-[#717171]">
+              Radius around selected destination
+            </span>
+            <div>
+              <Box width={300}>
+                <Slider
+                  defaultValue={20}
+                  aria-label="Default"
+                  valueLabelDisplay="auto"
+                />
+              </Box>
+            </div>
+            <button className="w-full bg-white rounded-lg">
+              <div className="flex items-center justify-between px-[22px] py-[15px] text-[#717171]">
+                <span>Price Range</span>
+                <svg
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.84016 0.493663L9.5126 0.163823C9.40951 0.0608136 9.27235 0.00406517 9.12577 0.00406517C8.97926 0.00406517 8.84194 0.0608136 8.73885 0.163823L5.00224 3.9006L1.26131 0.159676C1.15838 0.0566672 1.02107 0 0.87456 0C0.728055 0 0.590655 0.0566672 0.487646 0.159676L0.160001 0.487484C-0.0533338 0.700656 -0.0533338 1.04789 0.160001 1.26107L4.61402 5.7311C4.71695 5.83403 4.8541 5.90655 5.00191 5.90655H5.00362C5.1502 5.90655 5.28736 5.83395 5.39029 5.7311L9.84016 1.27318C9.94325 1.17025 9.99984 1.02895 10 0.882446C10 0.73586 9.94325 0.596509 9.84016 0.493663Z"
+                    fill="#717171"
+                  />
+                </svg>
+              </div>
+            </button>
+            <div>
+              <span className="text-[18px] font-medium">Tags</span>
+            </div>
+            <div>
+              <ul className="flex flex-col gap-5 list-none">
+                <li className="">
+                  <label className="flex gap-5">
+                    <input
+                      type="checkbox"
+                      name="option1"
+                      value="Option 1"
+                      className="w-[18px] h-[18px] outline-1 outline-[#717171]"
+                    />
+                    <span className="text-[#717171]">
+                      {" "}
+                      Accepts Credit Cards
+                    </span>
+                  </label>
+                </li>
+                <li className="">
+                  <label className="flex gap-5">
+                    <input
+                      type="checkbox"
+                      name="option1"
+                      value="Option 1"
+                      className="w-[18px] h-[18px] outline-1 outline-[#717171]"
+                    />
+                    <span className="text-[#717171]"> Smoking Allowed</span>
+                  </label>
+                </li>
+                <li className="">
+                  <label className="flex gap-5">
+                    <input
+                      type="checkbox"
+                      name="option1"
+                      value="Option 1"
+                      className="w-[18px] h-[18px] outline-1 outline-[#717171]"
+                    />
+                    <span className="text-[#717171]"> Bike Parking</span>
+                  </label>
+                </li>
+                <li className="">
+                  <label className="flex gap-5">
+                    <input
+                      type="checkbox"
+                      name="option1"
+                      value="Option 1"
+                      className="w-[18px] h-[18px] outline-1 outline-[#a5a5a5"
+                      checked
+                    />
+                    <span className="text-[#717171]"> Street Parking</span>
+                  </label>
+                </li>
+                <li className="">
+                  <label className="flex gap-5">
+                    <input
+                      type="checkbox"
+                      name="option1"
+                      value="Option 1"
+                      className="w-[18px] h-[18px] outline-1 outline-[#717171]"
+                    />
+                    <span className="text-[#717171]"> Wireless Internet</span>
+                  </label>
+                </li>
+                <li className="">
+                  <label className="flex gap-5">
+                    <input
+                      type="checkbox"
+                      name="option1"
+                      value="Option 1"
+                      className="w-[18px] h-[18px] outline-1 outline-[#717171]"
+                    />
+                    <span className="text-[#717171]"> Alcohol </span>
+                  </label>
+                </li>
+                <li className="">
+                  <label className="flex gap-5">
+                    <input
+                      type="checkbox"
+                      name="option1"
+                      value="Option 1"
+                      className="w-[18px] h-[18px] outline-1 outline-[#717171]"
+                    />
+                    <span className="text-[#717171]">Pet </span>
+                  </label>
+                </li>
+                <li className="">
+                  <label className="flex gap-5">
+                    <input
+                      type="checkbox"
+                      name="option1"
+                      value="Option 1"
+                      className="w-[18px] h-[18px] outline-1 outline-[#717171]"
+                    />
+                    <span className="text-[#717171]">Friendly</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <button className="w-full bg-[#ED4949] rounded-lg">
+              <div className="flex items-center justify-center px-[22px] py-[20px] text-white">
+                <span>Search</span>
+              </div>
+            </button>
+            <div className="flex items-center justify-center ">
+              <span className="text-[#717171] underline">Reset Filter</span>
+            </div>
           </div>
-          <div className="col-span-2 flex flex-col gap-5">
-            <div className="flex justify-between items-center">
+          <div className="flex flex-col col-span-2 gap-5">
+            <div className="flex items-center justify-between">
               <p className="flex gap-3">
                 <span className="text-[#717171]">Showing</span>
                 <span>1 – 8 of 10 results</span>
               </p>
-              <div className="flex gap-3 items-center">
+              <div className="flex items-center gap-3">
                 <div className="flex gap-2">
                   <span className="text-[#717171]">Sort by:</span>
                   <span className="flex items-center gap-5">
