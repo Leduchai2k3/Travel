@@ -20,12 +20,7 @@ video {
   display: block;
   max-width: 100%;
 }
-input,
-select,
-textarea {
-  background-color: transparent;
-  outline: none;
-}
+
 button {
   cursor: pointer;
   background-color: transparent;
@@ -36,4 +31,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
+}
+ul {
+  list-style-type: disc;
 }

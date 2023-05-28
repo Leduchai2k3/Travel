@@ -28,7 +28,7 @@ const StyledDiv = styled.div`
 `;
 const HomePage = () => {
   return (
-    <div className="w-full h-full bg-[#F9F7F1] min-h-screen">
+    <div className="min-w-full h-full bg-[#F9F7F1] min-h-screen">
       <Header image={"bgHome.png"}>
         <div className="absolute top-[50%] text-white left-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col gap-2 items-center">
           <h1 className="text-[50px] font-medium">
@@ -63,14 +63,14 @@ const HomePage = () => {
           </div>
         </div>
       </Header>
-      <div className="pl-[375px] pr-[375px] flex flex-col items-center w-full mt-[55px] mx-auto ">
-        <div className="mx-auto flex flex-col items-center gap-3 ">
+      <div className="px-[375px] xl:px-[200px] lg:px-[100px] xs:px-[10px] sm:px-[20px] flex flex-col items-center w-full mt-[55px] mx-auto ">
+        <div className="flex flex-col items-center gap-3 mx-auto ">
           <h3 className="text-[30px] font-medium">Exclusive deals</h3>
-          <span className="text-[16px] font-normal text-[#717171]">
+          <span className="text-[16px] font-normal text-center text-[#717171]">
             Discover some of the most popular listings in Vietnam based on user
             reviews and ratings.
           </span>
-          <div className="grid grid-cols-3 gap-[30px]">
+          <div className="grid grid-cols-3 sm:flex sm:flex-col gap-[30px] ">
             <ItemHome
               image="ItemHome.png"
               avatar={"Avatar.png"}
@@ -99,7 +99,7 @@ const HomePage = () => {
               }
             ></ItemHome>
           </div>
-          <div className="mt-3 flex gap-2">
+          <div className="flex gap-2 mt-3">
             <Dot></Dot>
             <Pag></Pag>
             <Dot></Dot>
@@ -169,7 +169,7 @@ const HomePage = () => {
       <div className="mt-[100px] relative">
         <img src="Maskgroup.png" alt="" />
         <div className="absolute flex flex-col items-center top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white gap-[70px]">
-          <div className="flex flex-col gap-3 items-center">
+          <div className="flex flex-col items-center gap-3">
             <h3 className="font-medium text-[30px]">How it Works</h3>
             <span className="text-[16px] font-normal">
               Bringing business and community members together.
@@ -223,7 +223,7 @@ const HomePage = () => {
       </div>
       <div className="w-full">
         <div className="mx-auto flex items-center flex-col mt-[90px] gap-[45px]">
-          <div className="flex items-center flex-col gap-2 ">
+          <div className="flex flex-col items-center gap-2 ">
             <h3 className="text-[30px] font-medium">
               Testimonials From Our Customers
             </h3>
@@ -277,7 +277,7 @@ const HomePage = () => {
               </span>
             </div>
           </div>
-          <div className=" flex gap-2">
+          <div className="flex gap-2 ">
             <Dot></Dot>
             <Pag></Pag>
             <Dot></Dot>
@@ -287,7 +287,7 @@ const HomePage = () => {
       </div>
 
       <div className="pl-[375px] pr-[375px] flex flex-col items-center w-full mt-[100px] mx-auto ">
-        <div className="mx-auto flex flex-col items-center gap-3">
+        <div className="flex flex-col items-center gap-3 mx-auto">
           <h3 className="text-[30px] font-medium">Articles</h3>
           <span className="text-[16px] font-normal text-[#717171]">
             Checkout Latest News And Articles From Our Blog
@@ -348,7 +348,7 @@ const HomePage = () => {
               }
             ></ItemArticles>
           </div>
-          <div className="mt-3 flex gap-2">
+          <div className="flex gap-2 mt-3">
             <button className="w-[200px] h-[55px] bg-[#ED4949] rounded-lg text-white font-semibold">
               View all articles
             </button>

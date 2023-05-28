@@ -1,6 +1,6 @@
 const ItemArticles = ({ address, name, date, title, image }) => {
   return (
-    <div className="relative bg-white flex flex-col gap-3 pb-3 rounded-lg">
+    <div className="relative bg-white flex flex-col gap-3 pb-3 rounded-lg border border-[#EAEAEA]">
       <div className="relative">
         <button className="absolute top-[24px] left-[24px] bg-[#2650D9] px-[20px] py-[6px] text-[14px] text-white rounded-xl">
           {address}

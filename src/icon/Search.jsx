@@ -2,7 +2,7 @@ import React from "react";
 
 const Search = () => {
   return (
-    <div>
+    <div className="xs:hidden">
       <svg
         width="21"
         height="23"

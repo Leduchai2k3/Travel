@@ -3,13 +3,13 @@ import Star from "../icon/Star";
 
 const ItemHome = ({ image, avatar, address, title, description }) => {
   return (
-    <div className=" bg-white rounded-lg">
+    <div className="bg-white rounded-lg ">
       <div className="relative">
         <div className="relative">
           <img
             src={image}
             alt=""
-            className="w-[366px] aspect-video object-cover p-2 rounded-2xl overflow-hidden"
+            className="object-cover w-full p-2 overflow-hidden aspect-video rounded-2xl"
           />
         </div>
         <div className="absolute top-[24px] left-[24px] flex right-[24px] justify-between">
@@ -43,7 +43,7 @@ const ItemHome = ({ image, avatar, address, title, description }) => {
           {description}
         </span>
       </div>
-      <div className="w-full flex justify-end pr-6">
+      <div className="flex justify-end w-full pr-6">
         <button className="w-[95px] h-[40px] bg-[#ED4949] rounded-lg mb-4 mt-4 text-white">
           Book Now
         </button>
