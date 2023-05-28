@@ -5,6 +5,7 @@ export default {
     screens: {
       xs: { min: "0px", max: "1023px" },
       sm: { min: "0px", max: "850px" },
+      mb: { min: "0px", max: "655px" },
       // => @media (min-width: 640px and max-width: 767px) { ... }
 
       // 'md': { min: "768px", max: "1023px" },

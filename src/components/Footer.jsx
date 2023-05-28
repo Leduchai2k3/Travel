@@ -3,9 +3,9 @@ import Logo from "../icon/Logo";
 
 const Footer = () => {
   return (
-    <div className="h-[560px] relative bg-[#1D293E] px-[350px] pt-[100px] text-white">
-      <div className="grid grid-cols-7 gap-[100px]">
-        <div className="col-span-2 flex flex-col gap-7 ">
+    <div className="h-[560px] lg:h-[800px] xs:h-[1100px] relative bg-[#1D293E] px-[350px] pt-[100px] lg:px-[80px] xs:px-[10px] text-white">
+      <div className="grid grid-cols-7 gap-[100px] xs:flex xs:flex-col">
+        <div className="flex flex-col col-span-3 gap-7 lg:col-span-5">
           <span className="text-[18px]">Contact Us</span>
           <div className="flex flex-col gap-4">
             <div className="flex gap-5">
@@ -68,7 +68,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-1 flex flex-col gap-7">
+        <div className="flex flex-col col-span-1 gap-7">
           <span className="text-[18px]">Company</span>
           <div className="flex flex-col gap-4 text-[15px] font-light">
             <NavLink to={"/"}>Booking</NavLink>
@@ -76,10 +76,10 @@ const Footer = () => {
             <NavLink to={"/"}>Contact Us</NavLink>
           </div>
         </div>
-        <div className="col-span-4 flex flex-col gap-7">
+        <div className="flex flex-col col-span-3 gap-7">
           <span className="text-[18px]">Discovery</span>
           <div className="grid grid-cols-5 gap-4 text-[15px] font-light">
-            <div className="col-span-2 flex flex-col gap-4">
+            <div className="flex flex-col col-span-2 gap-4">
               <span>Ha Noi</span>
               <span>Ho Chi Minh</span>
               <span>Hue</span>
@@ -87,7 +87,7 @@ const Footer = () => {
               <span>Phu Quoc</span>
               <span>Nha Trang</span>
             </div>
-            <div className="col-span-2 flex flex-col gap-4">
+            <div className="flex flex-col col-span-2 gap-4">
               <span>Mui Ne</span>
               <span>Vung Tau</span>
               <span>Da Lat</span>
@@ -95,7 +95,7 @@ const Footer = () => {
               <span>Quang Nam</span>
               <span>Nghe An</span>
             </div>
-            <div className="col-span-1 flex flex-col gap-4">
+            <div className="flex flex-col col-span-1 gap-4">
               <span>Dak Lak</span>
               <span>Lam Dong</span>
               <span>Hoi An</span>
@@ -106,9 +106,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="absolute h-[110px] flex items-center left-0 right-0 bg-transparent  bottom-0 border-t border-white border-opacity-10 px-[350px] justify-between ">
+      <div className="absolute h-[110px] flex items-center left-0 right-0 bg-transparent xs:px-[10px] lg:px-[80px] bottom-0 border-t border-white border-opacity-10 px-[350px] justify-between ">
         <div>© Guido - All rights reserved</div>
-        <div className="flex items-center">
+        <div className="flex items-center lg:hidden xs:hidden">
           <Logo></Logo>
           <span className="text-[30px] font-medium leading-[43px]">
             Travel exprience

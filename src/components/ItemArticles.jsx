@@ -8,7 +8,7 @@ const ItemArticles = ({ address, name, date, title, image }) => {
         <img
           src={image}
           alt=""
-          className="object-cover p-2 rounded-2xl overflow-hidden"
+          className="object-cover w-full p-2 overflow-hidden rounded-2xl"
         />
       </div>
       <div className="flex px-5 text-[#717171] gap-[40px] text-[14px]">
@@ -19,7 +19,7 @@ const ItemArticles = ({ address, name, date, title, image }) => {
           <span>{date}</span>
         </div>
       </div>
-      <div className="font-medium text-lg px-5">
+      <div className="px-5 text-lg font-medium">
         <span>{title}</span>
       </div>
     </div>
