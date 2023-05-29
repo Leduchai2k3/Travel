@@ -11,7 +11,7 @@ import Register from "./pages/Register";
 
 const App = () => {
   return (
-    <div>
+    <div className="w-[100%] overflow-x-hidden">
       <Routes>
         <Route path="/" element={<HomePage></HomePage>}></Route>
         <Route path="/blog" element={<BlogPage></BlogPage>}></Route>
