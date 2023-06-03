@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Head from "../components/Head";
 import ItemHome from "../components/ItemHome";
@@ -8,7 +8,9 @@ const ListingDetails = () => {
   function handleShow() {
     setShow(!show);
   }
-  console.log(show);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Head className={"bg-[#ED4949]"}></Head>

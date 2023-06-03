@@ -2,7 +2,11 @@ import { NavLink } from "react-router-dom";
 import Header from "./../components/Header";
 import ItemArticles from "../components/ItemArticles";
 import Footer from "../components/Footer";
+import { useEffect } from "react";
 const BlogDetails = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="h-full min-w-full min-h-screen bg-white">
       <Header image="/imageDetail.png">

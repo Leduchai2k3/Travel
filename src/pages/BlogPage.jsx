@@ -3,8 +3,12 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ItemArticles from "../components/ItemArticles";
 import TopArticle from "../components/TopArticle";
+import { useEffect } from "react";
 
 const BlogPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="w-full h-full min-h-screen bg-white">
       <Header image={"ImageBlog.png"}>

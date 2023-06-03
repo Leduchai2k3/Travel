@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import SearchButton from "../icon/SearchButton";
 import Header from "../components/Header";
@@ -28,6 +28,10 @@ const StyledDiv = styled.div`
   }
 `;
 const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-w-full h-full bg-[#F9F7F1] min-h-screen">
       <Header image={"bgHome.png"}>

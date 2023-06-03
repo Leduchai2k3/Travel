@@ -4,8 +4,12 @@ import Head from "../components/Head";
 import ItemHome from "../components/ItemHome";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
+import { useEffect } from "react";
 
 const Listing = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="w-full h-full">
       <Head className={"bg-[#ED4949]"}></Head>
