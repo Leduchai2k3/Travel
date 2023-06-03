@@ -1,14 +1,20 @@
+import { useState } from "react";
 import Footer from "../components/Footer";
 import Head from "../components/Head";
 import ItemHome from "../components/ItemHome";
 
 const ListingDetails = () => {
+  const [show, setShow] = useState(false);
+  function handleShow() {
+    setShow(!show);
+  }
+  console.log(show);
   return (
     <div>
       <Head className={"bg-[#ED4949]"}></Head>
       <div className="pt-[145px] px-[375px] lg:px-[100px] xs:px-[20px] mb:px-[10px] mb:gap-[15px]">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-4 mb:gap-1">
             <div className="w-[86px] h-[86px] p-1 shadow-xl rounded-full border border-gray-100">
               <img
                 src="/Avt.png"
@@ -16,23 +22,28 @@ const ListingDetails = () => {
                 className="object-cover w-full h-full rounded-full"
               />
             </div>
-            <div className="flex flex-col gap-4">
-              <span className="font-medium text-[30px]">Minh Hieu</span>
-              <div className="flex gap-8 sm:gap-3 mb:hidden">
-                <div className="flex items-center gap-3">
+            <div className="flex flex-col gap-4 mb:gap-2">
+              <span className="font-medium text-[30px] mb:text-[18px]">
+                Minh Hieu
+              </span>
+              <div className="flex gap-8 sm:gap-3 mb:flex-col">
+                <div className="flex items-center gap-3 mb:gap-1">
                   <svg
                     width="18"
                     height="18"
                     viewBox="0 0 18 18"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="mb:w-3 mb:h-3"
                   >
                     <path
                       d="M12.9365 18C12.3555 18 11.7794 17.8973 11.216 17.6926C8.73416 16.791 6.43047 15.3226 4.5539 13.4461C2.67734 11.5696 1.20892 9.26582 0.307378 6.78396C0.0176675 5.98637 -0.067829 5.16305 0.0533496 4.33677C0.166865 3.5628 0.466665 2.81144 0.920373 2.16388C1.37608 1.51348 1.98363 0.972523 2.6773 0.599495C3.41703 0.201718 4.22443 0 5.07715 0C5.34236 0 5.57156 0.185301 5.62714 0.444603L6.51002 4.56471C6.54999 4.75128 6.49266 4.9454 6.35777 5.08033L4.84917 6.58889C6.27231 9.41836 8.58155 11.7276 11.411 13.1507L12.9196 11.6421C13.0545 11.5073 13.2487 11.45 13.4352 11.4899L17.5553 12.3728C17.8146 12.4283 17.9999 12.6576 17.9999 12.9228C17.9999 13.7755 17.7982 14.5829 17.4004 15.3226C17.0274 16.0163 16.4864 16.6239 15.836 17.0796C15.1885 17.5333 14.4371 17.8331 13.6631 17.9466C13.4206 17.9822 13.1781 18 12.9365 18ZM4.62773 1.14956C3.50295 1.27373 2.50462 1.86328 1.84167 2.80947C1.09618 3.87343 0.922341 5.18206 1.36473 6.3999C3.098 11.1713 6.82867 14.902 11.6001 16.6353C12.8179 17.0776 14.1265 16.9038 15.1905 16.1583C16.1367 15.4954 16.7263 14.497 16.8504 13.3723L13.4987 12.654L11.9232 14.2295C11.7556 14.3972 11.5008 14.4417 11.2863 14.3409C7.93994 12.7688 5.2312 10.06 3.65907 6.71365C3.55828 6.4991 3.60279 6.24437 3.77044 6.07675L5.34594 4.50126L4.62773 1.14956Z"
                       fill="#222222"
                     />
                   </svg>
-                  <span>+61-8181-123</span>
+                  <span className="whitespace-nowrap mb:text-[12px]">
+                    +61-8181-123
+                  </span>
                 </div>
                 <div className="flex items-center gap-3 sm:gap-1">
                   <svg
@@ -41,6 +52,7 @@ const ListingDetails = () => {
                     viewBox="0 0 18 18"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="mb:w-3 mb:h-3"
                   >
                     <path
                       d="M9.00186 3.86914C7.15925 3.86914 5.66016 5.36824 5.66016 7.21085C5.66016 9.05346 7.15925 10.5526 9.00186 10.5526C10.8445 10.5526 12.3436 9.05346 12.3436 7.21085C12.3436 5.36824 10.8445 3.86914 9.00186 3.86914ZM9.00186 9.14553C7.93508 9.14553 7.06718 8.27763 7.06718 7.21085C7.06718 6.14407 7.93508 5.27616 9.00186 5.27616C10.0686 5.27616 10.9365 6.14407 10.9365 7.21085C10.9365 8.27763 10.0686 9.14553 9.00186 9.14553Z"
@@ -52,9 +64,11 @@ const ListingDetails = () => {
                     />
                   </svg>
 
-                  <span>Nha Trang</span>
+                  <span className="whitespace-nowrap mb:text-[12px]">
+                    Nha Trang
+                  </span>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 mb:hidden">
                   <svg
                     width="10"
                     height="10"
@@ -122,13 +136,14 @@ const ListingDetails = () => {
           </div>
           <div className="flex gap-9 mb:gap-2">
             <div className="flex items-center gap-3">
-              <div className="flex items-center justify-center w-[45px] h-[45px] bg-[#F4F4F4] rounded-full">
+              <div className="flex items-center mb:h-7 mb:w-7 justify-center w-[45px] h-[45px] bg-[#F4F4F4] rounded-full">
                 <svg
                   width="17"
                   height="17"
                   viewBox="0 0 17 17"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  className="mb:w-3 mb:h-3"
                 >
                   <g clipPath="url(#clip0_473_4754)">
                     <path
@@ -147,16 +162,17 @@ const ListingDetails = () => {
                   </defs>
                 </svg>
               </div>
-              <span className="text-[#717171]">Share</span>
+              <span className="text-[#717171] mb:text-[12px]">Share</span>
             </div>
             <div className="flex items-center gap-3">
-              <div className="flex items-center justify-center w-[45px] h-[45px] bg-[#F4F4F4] rounded-full">
+              <div className="flex items-center justify-center w-[45px] h-[45px] mb:h-7 mb:w-7 bg-[#F4F4F4] rounded-full">
                 <svg
                   width="17"
                   height="15"
                   viewBox="0 0 17 15"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  className="mb:w-3 mb:h-3"
                 >
                   <path
                     d="M15.5917 1.6808C13.743 -0.0784307 10.7339 -0.0784307 8.88456 1.68041L8.50003 2.04564L8.11591 1.68057C6.26639 -0.0784971 3.25769 -0.0782979 1.40818 1.68057C0.500072 2.54432 0 3.68999 0 4.90622C0 6.12285 0.500072 7.26833 1.40831 8.13244L8.08941 14.4753C8.20433 14.5847 8.35228 14.6392 8.5 14.6392C8.64772 14.6392 8.79547 14.5845 8.91059 14.4751L15.5917 8.13244C16.4997 7.26852 17 6.12288 17 4.90642C17 3.68999 16.4997 2.54452 15.5917 1.6808ZM14.7697 7.26753L8.5 13.2201L2.23049 7.26773C1.56141 6.63149 1.19299 5.79281 1.19299 4.90642C1.19299 4.02003 1.56141 3.18135 2.23049 2.54511C2.92838 1.88102 3.84499 1.54919 4.76179 1.54919C5.6788 1.54919 6.5958 1.88142 7.2937 2.54551L8.08901 3.30088C8.31924 3.51979 8.68053 3.51979 8.91079 3.30088L9.7063 2.54511C11.1023 1.21712 13.3735 1.21712 14.7695 2.54511C15.4384 3.18139 15.807 4.02003 15.807 4.90642C15.807 5.79281 15.4384 6.63129 14.7697 7.26753Z"
@@ -164,7 +180,7 @@ const ListingDetails = () => {
                   />
                 </svg>
               </div>
-              <span className="text-[#717171]">Share</span>
+              <span className="text-[#717171] mb:text-[12px]">Share</span>
             </div>
           </div>
         </div>
@@ -213,10 +229,14 @@ const ListingDetails = () => {
           </div>
         </div>
         <div className="grid grid-cols-3 sm:grid-cols-1 mt-[57px] gap-[30px] pb-[100px]">
-          <div className="flex flex-col col-span-2 gap-3 sm:order-2">
+          <div className="flex flex-col col-span-2 gap-3 transition-all sm:order-2">
             <span className="text-[18px] font-medium">Overview</span>
-            <div className="relative">
-              <span className="leading-6 text-[#717171]">
+            <div className="relative ">
+              <span
+                className={`leading-6 text-[#717171] overflow-hidden transition-all ${
+                  show ? "" : "line-clamp-4"
+                }`}
+              >
                 Located in a desired area, this place is close to shopping
                 centers, schools, parks, and major transportation route. You’ll
                 have easy access to downtown and all the amenities the city has
@@ -231,9 +251,18 @@ const ListingDetails = () => {
                 house, schedule a viewing today by calling +61-8181-123. We look
                 forward to helping you with that...
               </span>
-              <div className="absolute top-0 w-full h-full bg-gradient-to-b from-transparent to-white"></div>
+              <div
+                className={`absolute top-0 w-full h-full bg-gradient-to-b from-transparent to-white transition-all ${
+                  show ? "hidden" : ""
+                }`}
+              ></div>
             </div>
-            <span className="mt-3 text-[#234DD4] underline">Show more</span>
+            <span
+              className="mt-3 text-[#234DD4] underline cursor-pointer transition-all"
+              onClick={handleShow}
+            >
+              {show ? "Read Less" : "Read More"}
+            </span>
             <span className="font-medium text-[18px] mt-10">Amenities</span>
             <div className="grid grid-cols-3 gap-8 mt-5">
               <div className="flex items-center gap-2">
@@ -479,17 +508,23 @@ const ListingDetails = () => {
               <div className=" border boder-[#AFAFAF] rounded-md grid grid-rows-2">
                 <div className="border-b border-[#AFAFAF] grid grid-cols-2">
                   <div className="flex flex-col gap-2 px-3 py-4">
-                    <span className="whitespace-nowrap">CHECK-IN</span>
-                    <span className="font-medium text-[14px]">6/1/2023</span>
+                    <span className="whitespace-nowrap text-[13px]">
+                      CHECK-IN
+                    </span>
+                    <span className="font-medium text-[13px]">6/1/2023</span>
                   </div>
                   <div className="border-l boder-[#AFAFAF] px-3 py-4 flex flex-col gap-2">
-                    <span className="whitespace-nowrap">CHECK-IN</span>
-                    <span className="font-medium text-[14px]">6/1/2023</span>
+                    <span className="whitespace-nowrap text-[13px]">
+                      CHECK-IN
+                    </span>
+                    <span className="font-medium text-[13px]">6/1/2023</span>
                   </div>
                 </div>
                 <div className="flex flex-col gap-2 px-3 py-4">
-                  <span className="whitespace-nowrap">CHECK-IN</span>
-                  <span className="font-medium text-[14px]">6/1/2023</span>
+                  <span className="whitespace-nowrap text-[13px]">
+                    CHECK-IN
+                  </span>
+                  <span className="font-medium text-[13px]">6/1/2023</span>
                 </div>
               </div>
               <span className="font-medium text-[16px]">Price detail</span>

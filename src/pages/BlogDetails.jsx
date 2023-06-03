@@ -6,14 +6,14 @@ const BlogDetails = () => {
   return (
     <div className="h-full min-w-full min-h-screen bg-white">
       <Header image="/imageDetail.png">
-        <div className="absolute bottom-[30px] left-[50%] mb:hidden translate-x-[-50%] text-white flex items-center justify-center flex-col gap-4">
-          <button className="px-[22px]  py-[8px] xs:hidden bg-[#234DD4] rounded-full ">
+        <div className="absolute bottom-[30px] mb:bottom-[10px] left-[50%]  translate-x-[-50%] text-white flex items-center justify-center flex-col gap-4">
+          <button className="px-[22px] py-[8px] xs:hidden bg-[#234DD4] rounded-full mb:hidden">
             Ho Chi Minh
           </button>
-          <span className="text-[30px] xl:text-[20px] xs:text-[20px] text-center font-medium ">
+          <span className="text-[30px] xl:text-[20px] mb:text-[12px] mb:font-normal xs:text-[20px] text-center font-medium ">
             Cafe Apartment - Discover the perfect blend of old-world charm
           </span>
-          <div className="flex gap-16">
+          <div className="flex gap-16 mb:hidden">
             <div className="flex items-center gap-3">
               <svg
                 width="15"

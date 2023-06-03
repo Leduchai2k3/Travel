@@ -73,7 +73,7 @@ const Head = ({ className }) => {
             />
           </svg>
           {show ? (
-            <div className="absolute w-[100px] right-0 flex flex-col rounded-lg mt-2 items-end gap-5 p-3 bg-[#F9F7F1] text-black shadow-xl">
+            <div className="absolute w-[100px] z-50 right-0 flex flex-col rounded-lg mt-2 items-end gap-5 p-3 bg-[#F9F7F1] text-black shadow-xl">
               <NavLink to={"/"}>Home</NavLink>
               <NavLink to={"/listing"}>Listings</NavLink>
               <NavLink to={"/blog"}>Blog</NavLink>

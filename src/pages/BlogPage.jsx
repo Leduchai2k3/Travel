@@ -13,7 +13,7 @@ const BlogPage = () => {
           <span className="mb:hidden">Home / Blog</span>
         </div>
       </Header>
-      <div className="px-[375px] xl:px-[150px] lg:px-[100px] xs:px-[20px] grid grid-cols-3 mb:gap-[10px] mb:grid-cols-2 gap-[30px] mt-[70px] mb:px-[10px]">
+      <div className="px-[375px] xl:px-[150px] lg:px-[100px] xs:px-[20px] grid grid-cols-3 mb:gap-[10px] mb:grid-cols-1 gap-[30px] mt-[70px] mb:px-[10px]">
         <div className="flex flex-col col-span-1 gap-5">
           <NavLink to={"/blog/cafe-apartment"}>
             <ItemArticles

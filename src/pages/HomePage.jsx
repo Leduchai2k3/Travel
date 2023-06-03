@@ -93,7 +93,7 @@ const HomePage = () => {
           </div>
         </div>
       </Header>
-      <div className="px-[375px] xl:px-[200px] lg:px-[100px] xs:px-[10px] sm:px-[20px] flex flex-col items-center w-full mt-[55px] mx-auto ">
+      <div className="px-[325px] xl:px-[200px] lg:px-[100px] xs:px-[10px] sm:px-[20px] flex flex-col items-center w-full mt-[55px] mx-auto ">
         <div className="flex flex-col items-center gap-3 mx-auto ">
           <h3 className="text-[30px] font-medium">Exclusive deals</h3>
           <span className="text-[16px] font-normal text-center text-[#717171]">
@@ -156,9 +156,13 @@ const HomePage = () => {
                 alt=""
                 className="h-[100%] rounded-lg"
               />
-              <div className=" flex flex-col absolute bottom-[28px] text-white gap-1 items-center left-[50%] translate-x-[-50%]">
-                <span className="text-lg font-medium">Ha Giang</span>
-                <span className="text-sm font-normal">62 Listings</span>
+              <div className=" flex flex-col absolute bottom-[28px] text-white gap-1 mb:gap-0 mb:bottom-1 items-center left-[50%] translate-x-[-50%]">
+                <span className="text-lg font-medium mb:text-[12px]">
+                  Ha Giang
+                </span>
+                <span className="text-sm font-normal mb:text-[10px]">
+                  62 Listings
+                </span>
               </div>
             </div>
             <div className="relative">
@@ -168,9 +172,13 @@ const HomePage = () => {
                 alt=""
                 className="h-[100%] rounded-lg"
               />
-              <div className=" flex flex-col absolute bottom-[28px] text-white gap-1 items-center left-[50%] translate-x-[-50%] mb:hidden">
-                <span className="text-lg font-medium">Ha Giang</span>
-                <span className="text-sm font-normal">62 Listings</span>
+              <div className=" flex flex-col absolute bottom-[28px] text-white gap-1 items-center left-[50%] translate-x-[-50%] whitespace-nowrap mb:gap-0 mb:bottom-1">
+                <span className="text-lg font-medium mb:text-[12px]">
+                  Ha Giang
+                </span>
+                <span className="text-sm font-normal mb:text-[10px]">
+                  62 Listings
+                </span>
               </div>
             </div>
           </div>
@@ -182,9 +190,13 @@ const HomePage = () => {
                 alt=""
                 className="h-[100%] rounded-lg"
               />
-              <div className=" flex flex-col absolute bottom-[28px] text-white gap-1 items-center left-[50%] translate-x-[-50%] mb:hidden">
-                <span className="text-lg font-medium">Ha Giang</span>
-                <span className="text-sm font-normal">62 Listings</span>
+              <div className=" flex flex-col absolute bottom-[28px] text-white gap-1 items-center left-[50%] translate-x-[-50%] mb:gap-0 mb:bottom-1 whitespace-nowrap">
+                <span className="text-lg font-medium mb:text-[12px]">
+                  Ha Giang
+                </span>
+                <span className="text-sm font-normal mb:text-[10px]">
+                  62 Listings
+                </span>
               </div>
             </div>
             <div className="relative">
@@ -194,9 +206,13 @@ const HomePage = () => {
                 alt=""
                 className="h-[100%] rounded-lg"
               />
-              <div className=" flex flex-col absolute bottom-[28px] text-white gap-1 items-center left-[50%] translate-x-[-50%] ">
-                <span className="text-lg font-medium">Ha Giang</span>
-                <span className="text-sm font-normal">62 Listings</span>
+              <div className=" flex flex-col absolute bottom-[28px] text-white gap-1 items-center left-[50%] translate-x-[-50%] mb:gap-0 mb:bottom-1">
+                <span className="text-lg font-medium mb:text-[12px]">
+                  Ha Giang
+                </span>
+                <span className="text-sm font-normal mb:text-[10px]">
+                  62 Listings
+                </span>
               </div>
             </div>
           </div>
@@ -206,8 +222,10 @@ const HomePage = () => {
         <img src="Maskgroup.png" alt="" />
         <div className="absolute flex flex-col items-center top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white gap-[70px] xs:gap-[30px]">
           <div className="flex flex-col items-center gap-3">
-            <h3 className="font-medium text-[30px]">How it Works</h3>
-            <span className="text-[16px] font-normal text-center">
+            <h3 className="font-medium text-[30px] mb:text-[24px]">
+              How it Works
+            </h3>
+            <span className="text-[12px] font-normal text-center">
               Bringing business and community members together.
             </span>
           </div>
@@ -367,7 +385,7 @@ const HomePage = () => {
                   Hai Phong
                 </span>
               </div>
-              <span className="text-[#717171] text-center w-[387px] lg:w-[280px] text-[15px] mb:w-[300px]">
+              <span className="text-[#717171] text-center w-[387px] lg:w-[280px] text-[15px] mb:w-[280px]">
                 The best hotel booking site Ive used. Instant confirmation,
                 competitive prices, and hassle-free cancellations.
               </span>
@@ -396,79 +414,61 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="px-[375px] xl:px-[200px] lg:px-[100px] xs:px-[10px] sm:px-[20px] flex flex-col items-center w-full mt-[100px] mx-auto ">
+      <div className="px-[325px] xl:px-[200px] lg:px-[100px] xs:px-[10px] sm:px-[20px] flex flex-col items-center w-full mt-[100px] mx-auto ">
         <div className="flex flex-col items-center gap-3 mx-auto">
           <h3 className="text-[30px] font-medium">Articles</h3>
           <span className="text-[16px] font-normal text-[#717171] text-center">
             Checkout Latest News And Articles From Our Blog
           </span>
           <div className="grid grid-cols-3 gap-[30px] mt-[50px] sm:flex sm:flex-col">
-            <NavLink to={"/blog/cafe-apartment"}>
-              <ItemArticles
-                image={"images.png"}
-                name={"Bao Ngoc"}
-                date={"May 20, 2021"}
-                address={"Quang Binh"}
-                title={
-                  "Explore the UNESCO World Heritage largest cave of Vietnam"
-                }
-              ></ItemArticles>
-            </NavLink>
-            <NavLink to={"/blog/cafe-apartment"}>
-              <ItemArticles
-                image={"images.png"}
-                name={"Bao Ngoc"}
-                date={"May 20, 2021"}
-                address={"Quang Binh"}
-                title={
-                  "Explore the UNESCO World Heritage largest cave of Vietnam"
-                }
-              ></ItemArticles>
-            </NavLink>
-            <NavLink to={"/blog/cafe-apartment"}>
-              <ItemArticles
-                image={"images.png"}
-                name={"Bao Ngoc"}
-                date={"May 20, 2021"}
-                address={"Quang Binh"}
-                title={
-                  "Explore the UNESCO World Heritage largest cave of Vietnam"
-                }
-              ></ItemArticles>
-            </NavLink>
-            <NavLink to={"/blog/cafe-apartment"}>
-              <ItemArticles
-                image={"images.png"}
-                name={"Bao Ngoc"}
-                date={"May 20, 2021"}
-                address={"Quang Binh"}
-                title={
-                  "Explore the UNESCO World Heritage largest cave of Vietnam"
-                }
-              ></ItemArticles>
-            </NavLink>
-            <NavLink to={"/blog/cafe-apartment"}>
-              <ItemArticles
-                image={"images.png"}
-                name={"Bao Ngoc"}
-                date={"May 20, 2021"}
-                address={"Quang Binh"}
-                title={
-                  "Explore the UNESCO World Heritage largest cave of Vietnam"
-                }
-              ></ItemArticles>
-            </NavLink>
-            <NavLink to={"/blog/cafe-apartment"}>
-              <ItemArticles
-                image={"images.png"}
-                name={"Bao Ngoc"}
-                date={"May 20, 2021"}
-                address={"Quang Binh"}
-                title={
-                  "Explore the UNESCO World Heritage largest cave of Vietnam"
-                }
-              ></ItemArticles>
-            </NavLink>
+            <ItemArticles
+              image={"images.png"}
+              name={"Bao Ngoc"}
+              address={"Quang Binh"}
+              title={
+                "Explore the UNESCO World Heritage largest cave of Vietnam"
+              }
+            ></ItemArticles>
+            <ItemArticles
+              image={"images.png"}
+              name={"Bao Ngoc"}
+              address={"Quang Binh"}
+              title={
+                "Explore the UNESCO World Heritage largest cave of Vietnam"
+              }
+            ></ItemArticles>
+            <ItemArticles
+              image={"images.png"}
+              name={"Bao Ngoc"}
+              address={"Quang Binh"}
+              title={
+                "Explore the UNESCO World Heritage largest cave of Vietnam"
+              }
+            ></ItemArticles>
+            <ItemArticles
+              image={"images.png"}
+              name={"Bao Ngoc"}
+              address={"Quang Binh"}
+              title={
+                "Explore the UNESCO World Heritage largest cave of Vietnam"
+              }
+            ></ItemArticles>
+            <ItemArticles
+              image={"images.png"}
+              name={"Bao Ngoc"}
+              address={"Quang Binh"}
+              title={
+                "Explore the UNESCO World Heritage largest cave of Vietnam"
+              }
+            ></ItemArticles>
+            <ItemArticles
+              image={"images.png"}
+              name={"Bao Ngoc"}
+              address={"Quang Binh"}
+              title={
+                "Explore the UNESCO World Heritage largest cave of Vietnam"
+              }
+            ></ItemArticles>
           </div>
           <div className="flex gap-2 mt-3">
             <button className="w-[200px] h-[55px] bg-[#ED4949] rounded-lg text-white font-semibold">
